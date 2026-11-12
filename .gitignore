@@ -1,0 +1,11 @@
+# Python
+api/.venv/
+api/__pycache__/
+api/*.pyc
+
+# Node / Bun
+web/node_modules/
+web/dist/
+
+# OS
+.DS_Store

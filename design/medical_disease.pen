@@ -1,0 +1,2661 @@
+{
+  "version": "2.22",
+  "children": [
+    {
+      "type": "frame",
+      "id": "Iv1Vh",
+      "x": 0,
+      "y": 0,
+      "name": "1 – Welcome",
+      "clip": true,
+      "width": 1440,
+      "height": 900,
+      "fill": "$bg",
+      "layout": "vertical",
+      "children": [
+        {
+          "type": "frame",
+          "id": "z26Ip",
+          "name": "Nav",
+          "width": "fill_container",
+          "height": 64,
+          "fill": "$surface",
+          "padding": 24,
+          "justifyContent": "space_between",
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "frame",
+              "id": "igmsJ",
+              "name": "Logo Row",
+              "gap": 8,
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "d1UyXP",
+                  "name": "Logo Mark",
+                  "width": 32,
+                  "height": 32,
+                  "fill": "$accent",
+                  "cornerRadius": 8,
+                  "justifyContent": "center",
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "LYr7L",
+                      "name": "Logo Icon",
+                      "fill": "$text-inverse",
+                      "content": "✚",
+                      "fontFamily": "Onest",
+                      "fontSize": 16,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                },
+                {
+                  "type": "text",
+                  "id": "N6DWNz",
+                  "name": "Logo Text",
+                  "fill": "$text-primary",
+                  "content": "MedCheck",
+                  "fontFamily": "Instrument Sans",
+                  "fontSize": 18,
+                  "fontWeight": "600"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "ScPgY",
+              "name": "Nav Links",
+              "gap": 32,
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "r1CoQy",
+                  "name": "Início",
+                  "fill": "$text-secondary",
+                  "content": "Início",
+                  "fontFamily": "Onest",
+                  "fontSize": 14,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "text",
+                  "id": "MpIcf",
+                  "name": "Como funciona",
+                  "fill": "$text-secondary",
+                  "content": "Como funciona",
+                  "fontFamily": "Onest",
+                  "fontSize": 14,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "text",
+                  "id": "ZgCGM",
+                  "name": "Sobre",
+                  "fill": "$text-secondary",
+                  "content": "Sobre",
+                  "fontFamily": "Onest",
+                  "fontSize": 14,
+                  "fontWeight": "normal"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "sDffS",
+          "name": "Hero",
+          "width": "fill_container",
+          "layout": "vertical",
+          "gap": 32,
+          "padding": 80,
+          "justifyContent": "center",
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "frame",
+              "id": "LnBHt",
+              "name": "Badge",
+              "fill": "$accent-light",
+              "cornerRadius": 9999,
+              "gap": 6,
+              "padding": [
+                6,
+                14
+              ],
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "zx7dn",
+                  "name": "Badge Text",
+                  "fill": "$accent",
+                  "content": "Sistema Especialista com Prolog + MedlinePlus",
+                  "fontFamily": "Onest",
+                  "fontSize": 12,
+                  "fontWeight": "500"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "yeqqB",
+              "name": "Headline Block",
+              "layout": "vertical",
+              "gap": 16,
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "MMuHH",
+                  "name": "Headline",
+                  "fill": "$text-primary",
+                  "textGrowth": "fixed-width",
+                  "width": 700,
+                  "content": "Descubra o que pode\nestar te afetando",
+                  "lineHeight": 1.1,
+                  "textAlign": "center",
+                  "fontFamily": "Instrument Sans",
+                  "fontSize": 56,
+                  "fontWeight": "700"
+                },
+                {
+                  "type": "text",
+                  "id": "iLCeY",
+                  "name": "Subheadline",
+                  "fill": "$text-secondary",
+                  "textGrowth": "fixed-width",
+                  "width": 560,
+                  "content": "Responda perguntas simples sobre seus sintomas e receba um diagnóstico preliminar baseado em inferência lógica. Sempre consulte um médico.",
+                  "lineHeight": 1.6,
+                  "textAlign": "center",
+                  "fontFamily": "Onest",
+                  "fontSize": 17,
+                  "fontWeight": "normal"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "SbNc9",
+              "name": "Modes Row",
+              "gap": 12,
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "V9gunb",
+                  "name": "Modes Label",
+                  "fill": "$text-secondary",
+                  "content": "Escolha a precisão:",
+                  "fontFamily": "Onest",
+                  "fontSize": 14,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "frame",
+                  "id": "sSZD3",
+                  "name": "Mode Rápido",
+                  "fill": "$surface",
+                  "cornerRadius": "$radius-xl",
+                  "layout": "vertical",
+                  "gap": 4,
+                  "padding": [
+                    14,
+                    20
+                  ],
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "yID2l",
+                      "name": "Mode Name",
+                      "fill": "$text-primary",
+                      "content": "Rápido",
+                      "fontFamily": "Instrument Sans",
+                      "fontSize": 14,
+                      "fontWeight": "600"
+                    },
+                    {
+                      "type": "text",
+                      "id": "VB0IZ",
+                      "name": "Mode Questions",
+                      "fill": "$text-secondary",
+                      "content": "20 perguntas",
+                      "fontFamily": "Onest",
+                      "fontSize": 12,
+                      "fontWeight": "normal"
+                    },
+                    {
+                      "type": "text",
+                      "id": "U0A6H9",
+                      "name": "Mode Time",
+                      "fill": "$text-muted",
+                      "content": "~2 min",
+                      "fontFamily": "Geist Mono",
+                      "fontSize": 11,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "dUoEI",
+                  "name": "Mode Padrão",
+                  "fill": "$accent",
+                  "cornerRadius": "$radius-xl",
+                  "layout": "vertical",
+                  "gap": 4,
+                  "padding": [
+                    14,
+                    20
+                  ],
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "LKjSI",
+                      "name": "Mode Name",
+                      "fill": "$text-inverse",
+                      "content": "Padrão",
+                      "fontFamily": "Instrument Sans",
+                      "fontSize": 14,
+                      "fontWeight": "600"
+                    },
+                    {
+                      "type": "text",
+                      "id": "j9Ev9",
+                      "name": "Mode Questions",
+                      "fill": "#DDD6FE",
+                      "content": "60 perguntas",
+                      "fontFamily": "Onest",
+                      "fontSize": 12,
+                      "fontWeight": "normal"
+                    },
+                    {
+                      "type": "text",
+                      "id": "mwMAJ",
+                      "name": "Mode Time",
+                      "fill": "#C4B5FD",
+                      "content": "~5 min",
+                      "fontFamily": "Geist Mono",
+                      "fontSize": 11,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "eHCT8",
+                  "name": "Mode Completo",
+                  "fill": "$surface",
+                  "cornerRadius": "$radius-xl",
+                  "layout": "vertical",
+                  "gap": 4,
+                  "padding": [
+                    14,
+                    20
+                  ],
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "eUuZN",
+                      "name": "Mode Name",
+                      "fill": "$text-primary",
+                      "content": "Completo",
+                      "fontFamily": "Instrument Sans",
+                      "fontSize": 14,
+                      "fontWeight": "600"
+                    },
+                    {
+                      "type": "text",
+                      "id": "Q0Pz3",
+                      "name": "Mode Questions",
+                      "fill": "$text-secondary",
+                      "content": "120 perguntas",
+                      "fontFamily": "Onest",
+                      "fontSize": 12,
+                      "fontWeight": "normal"
+                    },
+                    {
+                      "type": "text",
+                      "id": "ztmVl",
+                      "name": "Mode Time",
+                      "fill": "$text-muted",
+                      "content": "~10 min",
+                      "fontFamily": "Geist Mono",
+                      "fontSize": 11,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "mQXi3",
+              "name": "CTA Row",
+              "gap": 12,
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "FiLSO",
+                  "name": "Btn Primary",
+                  "fill": "$accent",
+                  "cornerRadius": 9999,
+                  "gap": 8,
+                  "padding": [
+                    14,
+                    28
+                  ],
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "ktyeb",
+                      "name": "Btn Label",
+                      "fill": "$text-inverse",
+                      "content": "Iniciar Diagnóstico",
+                      "fontFamily": "Instrument Sans",
+                      "fontSize": 15,
+                      "fontWeight": "600"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "Faowo",
+                  "name": "Btn Secondary",
+                  "fill": "$surface-2",
+                  "cornerRadius": 9999,
+                  "gap": 8,
+                  "padding": [
+                    14,
+                    28
+                  ],
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "tWfhk",
+                      "name": "Btn Label 2",
+                      "fill": "$text-primary",
+                      "content": "Como funciona?",
+                      "fontFamily": "Instrument Sans",
+                      "fontSize": 15,
+                      "fontWeight": "500"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "gTBxj",
+              "name": "Stats Row",
+              "gap": 12,
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "k50Wo6",
+                  "name": "Stat 6",
+                  "fill": "$surface",
+                  "cornerRadius": "$radius-2xl",
+                  "layout": "vertical",
+                  "gap": 4,
+                  "padding": [
+                    16,
+                    24
+                  ],
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "v10bBm",
+                      "name": "Stat Value",
+                      "fill": "$text-primary",
+                      "content": "6",
+                      "fontFamily": "Instrument Sans",
+                      "fontSize": 22,
+                      "fontWeight": "700"
+                    },
+                    {
+                      "type": "text",
+                      "id": "orcw1",
+                      "name": "Stat Label",
+                      "fill": "$text-secondary",
+                      "content": "doenças analisadas",
+                      "fontFamily": "Onest",
+                      "fontSize": 12,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "x2QfQu",
+                  "name": "Stat 12",
+                  "fill": "$surface",
+                  "cornerRadius": "$radius-2xl",
+                  "layout": "vertical",
+                  "gap": 4,
+                  "padding": [
+                    16,
+                    24
+                  ],
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "DSCOE",
+                      "name": "Stat Value",
+                      "fill": "$text-primary",
+                      "content": "12",
+                      "fontFamily": "Instrument Sans",
+                      "fontSize": 22,
+                      "fontWeight": "700"
+                    },
+                    {
+                      "type": "text",
+                      "id": "jRgiG",
+                      "name": "Stat Label",
+                      "fill": "$text-secondary",
+                      "content": "sintomas avaliados",
+                      "fontFamily": "Onest",
+                      "fontSize": 12,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "HbmHM",
+                  "name": "Stat MedlinePlus",
+                  "fill": "$surface",
+                  "cornerRadius": "$radius-2xl",
+                  "layout": "vertical",
+                  "gap": 4,
+                  "padding": [
+                    16,
+                    24
+                  ],
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "abYRD",
+                      "name": "Stat Value",
+                      "fill": "$text-primary",
+                      "content": "MedlinePlus",
+                      "fontFamily": "Instrument Sans",
+                      "fontSize": 22,
+                      "fontWeight": "700"
+                    },
+                    {
+                      "type": "text",
+                      "id": "PSMhw",
+                      "name": "Stat Label",
+                      "fill": "$text-secondary",
+                      "content": "dados verificados",
+                      "fontFamily": "Onest",
+                      "fontSize": 12,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "nQhOb",
+      "x": 1520,
+      "y": 0,
+      "name": "2 – Questionário",
+      "clip": true,
+      "width": 1440,
+      "height": 900,
+      "fill": "$bg",
+      "layout": "vertical",
+      "children": [
+        {
+          "type": "frame",
+          "id": "LA5Tj",
+          "name": "Nav",
+          "width": "fill_container",
+          "height": 64,
+          "fill": "$surface",
+          "padding": 24,
+          "justifyContent": "space_between",
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "frame",
+              "id": "i6pK7",
+              "name": "Logo Row",
+              "gap": 8,
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "RMX5N",
+                  "name": "Logo Mark",
+                  "width": 32,
+                  "height": 32,
+                  "fill": "$accent",
+                  "cornerRadius": 8,
+                  "justifyContent": "center",
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "YoBgQ",
+                      "name": "Logo Icon",
+                      "fill": "$text-inverse",
+                      "content": "✚",
+                      "fontFamily": "Onest",
+                      "fontSize": 16,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                },
+                {
+                  "type": "text",
+                  "id": "oi5HJ",
+                  "name": "Logo Text",
+                  "fill": "$text-primary",
+                  "content": "MedCheck",
+                  "fontFamily": "Instrument Sans",
+                  "fontSize": 18,
+                  "fontWeight": "600"
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "id": "AuIJ3",
+              "name": "Nav Step",
+              "fill": "$text-secondary",
+              "content": "Passo 3 de 12",
+              "fontFamily": "Onest",
+              "fontSize": 13,
+              "fontWeight": "normal"
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "KD5TT",
+          "name": "Body",
+          "width": "fill_container",
+          "gap": 40,
+          "padding": 60,
+          "children": [
+            {
+              "type": "frame",
+              "id": "U4YGx",
+              "name": "Left Panel",
+              "width": 480,
+              "layout": "vertical",
+              "gap": 28,
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "VWCbd",
+                  "name": "Progress Block",
+                  "width": "fill_container",
+                  "layout": "vertical",
+                  "gap": 10,
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "mDV0Q",
+                      "name": "Prog Label Row",
+                      "width": "fill_container",
+                      "justifyContent": "space_between",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "lxGA4",
+                          "name": "Prog Label",
+                          "fill": "$text-secondary",
+                          "content": "Progresso",
+                          "fontFamily": "Onest",
+                          "fontSize": 12,
+                          "fontWeight": "normal"
+                        },
+                        {
+                          "type": "text",
+                          "id": "qAVwR",
+                          "name": "Prog Pct",
+                          "fill": "$accent",
+                          "content": "25%",
+                          "fontFamily": "Geist Mono",
+                          "fontSize": 12,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "N5IbG",
+                      "name": "Progress Track",
+                      "width": "fill_container",
+                      "height": 6,
+                      "fill": "$surface-2",
+                      "cornerRadius": 9999,
+                      "children": [
+                        {
+                          "type": "frame",
+                          "id": "wazQ6",
+                          "name": "Progress Fill",
+                          "width": 120,
+                          "height": 6,
+                          "fill": "$accent",
+                          "cornerRadius": 9999
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "D10m8",
+                  "name": "Question Block",
+                  "width": "fill_container",
+                  "layout": "vertical",
+                  "gap": 12,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "AN5TO",
+                      "name": "Question Label",
+                      "fill": "$text-muted",
+                      "content": "Sintoma 3 de 12",
+                      "fontFamily": "Onest",
+                      "fontSize": 12,
+                      "fontWeight": "500"
+                    },
+                    {
+                      "type": "text",
+                      "id": "E4T9Bu",
+                      "name": "Question Text",
+                      "fill": "$text-primary",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "Você está sentindo febre?",
+                      "lineHeight": 1.2,
+                      "fontFamily": "Instrument Sans",
+                      "fontSize": 32,
+                      "fontWeight": "700"
+                    },
+                    {
+                      "type": "text",
+                      "id": "nuW1E",
+                      "name": "Question Hint",
+                      "fill": "$text-secondary",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "Considera-se febre temperatura corporal acima de 37,8°C",
+                      "lineHeight": 1.5,
+                      "fontFamily": "Onest",
+                      "fontSize": 14,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "Q1eFa",
+                  "name": "Answer Row",
+                  "width": "fill_container",
+                  "gap": 12,
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "TB7PZ",
+                      "name": "Btn Sim",
+                      "width": "fill_container",
+                      "fill": "$accent",
+                      "cornerRadius": "$radius-xl",
+                      "gap": 8,
+                      "padding": [
+                        16,
+                        0
+                      ],
+                      "justifyContent": "center",
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "N6tTSq",
+                          "name": "Label",
+                          "fill": "$text-inverse",
+                          "content": "Sim",
+                          "fontFamily": "Instrument Sans",
+                          "fontSize": 16,
+                          "fontWeight": "600"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "AweIU",
+                      "name": "Btn Não",
+                      "width": "fill_container",
+                      "fill": "$surface",
+                      "cornerRadius": "$radius-xl",
+                      "gap": 8,
+                      "padding": [
+                        16,
+                        0
+                      ],
+                      "justifyContent": "center",
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "q0KL3g",
+                          "name": "Label",
+                          "fill": "$text-primary",
+                          "content": "Não",
+                          "fontFamily": "Instrument Sans",
+                          "fontSize": 16,
+                          "fontWeight": "600"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "oHLoC",
+                  "name": "History Block",
+                  "width": "fill_container",
+                  "layout": "vertical",
+                  "gap": 8,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "HeFa5",
+                      "name": "Hist Label",
+                      "fill": "$text-muted",
+                      "content": "Respostas anteriores",
+                      "fontFamily": "Onest",
+                      "fontSize": 12,
+                      "fontWeight": "normal"
+                    },
+                    {
+                      "type": "frame",
+                      "id": "D9eXUv",
+                      "name": "Hist Dor de cabeça",
+                      "width": "fill_container",
+                      "fill": "$surface",
+                      "cornerRadius": "$radius-lg",
+                      "padding": [
+                        10,
+                        14
+                      ],
+                      "justifyContent": "space_between",
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "SVdQJ",
+                          "name": "Symptom",
+                          "fill": "$text-secondary",
+                          "content": "Dor de cabeça",
+                          "fontFamily": "Onest",
+                          "fontSize": 13,
+                          "fontWeight": "normal"
+                        },
+                        {
+                          "type": "frame",
+                          "id": "D2qnhz",
+                          "name": "Badge",
+                          "fill": "$success-light",
+                          "cornerRadius": 9999,
+                          "padding": [
+                            3,
+                            10
+                          ],
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "WaKiD",
+                              "name": "Badge Text",
+                              "fill": "$success",
+                              "content": "Sim",
+                              "fontFamily": "Onest",
+                              "fontSize": 12,
+                              "fontWeight": "500"
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "yBRN2",
+                      "name": "Hist Coriza",
+                      "width": "fill_container",
+                      "fill": "$surface",
+                      "cornerRadius": "$radius-lg",
+                      "padding": [
+                        10,
+                        14
+                      ],
+                      "justifyContent": "space_between",
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "HYytz",
+                          "name": "Symptom",
+                          "fill": "$text-secondary",
+                          "content": "Coriza",
+                          "fontFamily": "Onest",
+                          "fontSize": 13,
+                          "fontWeight": "normal"
+                        },
+                        {
+                          "type": "frame",
+                          "id": "cAhID",
+                          "name": "Badge",
+                          "fill": "$surface-2",
+                          "cornerRadius": 9999,
+                          "padding": [
+                            3,
+                            10
+                          ],
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "YGJHJ",
+                              "name": "Badge Text",
+                              "fill": "$text-secondary",
+                              "content": "Não",
+                              "fontFamily": "Onest",
+                              "fontSize": 12,
+                              "fontWeight": "500"
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "V7OfU",
+                      "name": "Hist Cansaço",
+                      "width": "fill_container",
+                      "fill": "$surface",
+                      "cornerRadius": "$radius-lg",
+                      "padding": [
+                        10,
+                        14
+                      ],
+                      "justifyContent": "space_between",
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "ZIST0",
+                          "name": "Symptom",
+                          "fill": "$text-secondary",
+                          "content": "Cansaço",
+                          "fontFamily": "Onest",
+                          "fontSize": 13,
+                          "fontWeight": "normal"
+                        },
+                        {
+                          "type": "frame",
+                          "id": "OSEbS",
+                          "name": "Badge",
+                          "fill": "$success-light",
+                          "cornerRadius": 9999,
+                          "padding": [
+                            3,
+                            10
+                          ],
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "s3rnQ",
+                              "name": "Badge Text",
+                              "fill": "$success",
+                              "content": "Sim",
+                              "fontFamily": "Onest",
+                              "fontSize": 12,
+                              "fontWeight": "500"
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "s0DXq",
+              "name": "Right Panel",
+              "width": "fill_container",
+              "layout": "vertical",
+              "gap": 16,
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "OiiDt",
+                  "name": "Info Card",
+                  "width": "fill_container",
+                  "fill": "$surface",
+                  "cornerRadius": "$radius-2xl",
+                  "layout": "vertical",
+                  "gap": 20,
+                  "padding": 28,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "bBQfj",
+                      "name": "Card Title",
+                      "fill": "$text-primary",
+                      "content": "Doenças possíveis até agora",
+                      "fontFamily": "Instrument Sans",
+                      "fontSize": 14,
+                      "fontWeight": "600"
+                    },
+                    {
+                      "type": "frame",
+                      "id": "kWvoa",
+                      "name": "Disease Gripe",
+                      "width": "fill_container",
+                      "layout": "vertical",
+                      "gap": 6,
+                      "children": [
+                        {
+                          "type": "frame",
+                          "id": "JstgO",
+                          "name": "Label Row",
+                          "width": "fill_container",
+                          "justifyContent": "space_between",
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "VQJwL",
+                              "name": "Disease Name",
+                              "fill": "$text-primary",
+                              "content": "Gripe",
+                              "fontFamily": "Onest",
+                              "fontSize": 13,
+                              "fontWeight": "normal"
+                            },
+                            {
+                              "type": "text",
+                              "id": "cOH4m",
+                              "name": "Disease Pct",
+                              "fill": "$accent",
+                              "content": "72%",
+                              "fontFamily": "Geist Mono",
+                              "fontSize": 13,
+                              "fontWeight": "normal"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "frame",
+                          "id": "Hofu5",
+                          "name": "Bar Track",
+                          "width": "fill_container",
+                          "height": 5,
+                          "fill": "$surface-2",
+                          "cornerRadius": 9999,
+                          "children": [
+                            {
+                              "type": "frame",
+                              "id": "Fcyra",
+                              "name": "Bar Fill",
+                              "width": 158,
+                              "height": 5,
+                              "fill": "$accent",
+                              "cornerRadius": 9999
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "ZUGym",
+                      "name": "Disease Resfriado",
+                      "width": "fill_container",
+                      "layout": "vertical",
+                      "gap": 6,
+                      "children": [
+                        {
+                          "type": "frame",
+                          "id": "jChA0",
+                          "name": "Label Row",
+                          "width": "fill_container",
+                          "justifyContent": "space_between",
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "zwXu3",
+                              "name": "Disease Name",
+                              "fill": "$text-primary",
+                              "content": "Resfriado",
+                              "fontFamily": "Onest",
+                              "fontSize": 13,
+                              "fontWeight": "normal"
+                            },
+                            {
+                              "type": "text",
+                              "id": "NRKUZ",
+                              "name": "Disease Pct",
+                              "fill": "$accent",
+                              "content": "48%",
+                              "fontFamily": "Geist Mono",
+                              "fontSize": 13,
+                              "fontWeight": "normal"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "frame",
+                          "id": "h8gCHB",
+                          "name": "Bar Track",
+                          "width": "fill_container",
+                          "height": 5,
+                          "fill": "$surface-2",
+                          "cornerRadius": 9999,
+                          "children": [
+                            {
+                              "type": "frame",
+                              "id": "SnnXM",
+                              "name": "Bar Fill",
+                              "width": 106,
+                              "height": 5,
+                              "fill": "$accent",
+                              "cornerRadius": 9999
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "PqGMn",
+                      "name": "Disease Covid-19",
+                      "width": "fill_container",
+                      "layout": "vertical",
+                      "gap": 6,
+                      "children": [
+                        {
+                          "type": "frame",
+                          "id": "zOYEM",
+                          "name": "Label Row",
+                          "width": "fill_container",
+                          "justifyContent": "space_between",
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "wJlLx",
+                              "name": "Disease Name",
+                              "fill": "$text-primary",
+                              "content": "Covid-19",
+                              "fontFamily": "Onest",
+                              "fontSize": 13,
+                              "fontWeight": "normal"
+                            },
+                            {
+                              "type": "text",
+                              "id": "ZIYeQ",
+                              "name": "Disease Pct",
+                              "fill": "$accent",
+                              "content": "31%",
+                              "fontFamily": "Geist Mono",
+                              "fontSize": 13,
+                              "fontWeight": "normal"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "frame",
+                          "id": "cBZIS",
+                          "name": "Bar Track",
+                          "width": "fill_container",
+                          "height": 5,
+                          "fill": "$surface-2",
+                          "cornerRadius": 9999,
+                          "children": [
+                            {
+                              "type": "frame",
+                              "id": "NNaen",
+                              "name": "Bar Fill",
+                              "width": 68,
+                              "height": 5,
+                              "fill": "$accent",
+                              "cornerRadius": 9999
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "yfZcr",
+                      "name": "Disease Dengue",
+                      "width": "fill_container",
+                      "layout": "vertical",
+                      "gap": 6,
+                      "children": [
+                        {
+                          "type": "frame",
+                          "id": "WfsT2",
+                          "name": "Label Row",
+                          "width": "fill_container",
+                          "justifyContent": "space_between",
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "Wo39t",
+                              "name": "Disease Name",
+                              "fill": "$text-primary",
+                              "content": "Dengue",
+                              "fontFamily": "Onest",
+                              "fontSize": 13,
+                              "fontWeight": "normal"
+                            },
+                            {
+                              "type": "text",
+                              "id": "BI42K",
+                              "name": "Disease Pct",
+                              "fill": "$accent",
+                              "content": "18%",
+                              "fontFamily": "Geist Mono",
+                              "fontSize": 13,
+                              "fontWeight": "normal"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "frame",
+                          "id": "NVQGQ",
+                          "name": "Bar Track",
+                          "width": "fill_container",
+                          "height": 5,
+                          "fill": "$surface-2",
+                          "cornerRadius": 9999,
+                          "children": [
+                            {
+                              "type": "frame",
+                              "id": "xS9yw",
+                              "name": "Bar Fill",
+                              "width": 40,
+                              "height": 5,
+                              "fill": "$accent",
+                              "cornerRadius": 9999
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "RYxqN",
+                  "name": "Tip Card",
+                  "width": "fill_container",
+                  "fill": "$accent-light",
+                  "cornerRadius": "$radius-2xl",
+                  "layout": "vertical",
+                  "gap": 10,
+                  "padding": 20,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "stLoh",
+                      "name": "Tip Title",
+                      "fill": "$accent",
+                      "content": "Dica",
+                      "fontFamily": "Instrument Sans",
+                      "fontSize": 13,
+                      "fontWeight": "600"
+                    },
+                    {
+                      "type": "text",
+                      "id": "bk0Mh",
+                      "name": "Tip Text",
+                      "fill": "$accent",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "Quanto mais sintomas você informar, mais preciso será o diagnóstico. Responda com honestidade.",
+                      "lineHeight": 1.5,
+                      "fontFamily": "Onest",
+                      "fontSize": 13,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "Q1RT6",
+      "x": 3040,
+      "y": 0,
+      "name": "3 – Resultado",
+      "clip": true,
+      "width": 1440,
+      "height": 960,
+      "fill": "$bg",
+      "layout": "vertical",
+      "children": [
+        {
+          "type": "frame",
+          "id": "HnN21",
+          "name": "Nav",
+          "width": "fill_container",
+          "height": 64,
+          "fill": "$surface",
+          "padding": 24,
+          "justifyContent": "space_between",
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "frame",
+              "id": "u9ZaM",
+              "name": "Logo Row",
+              "gap": 8,
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "ziYmG",
+                  "name": "Logo Mark",
+                  "width": 32,
+                  "height": 32,
+                  "fill": "$accent",
+                  "cornerRadius": 8,
+                  "justifyContent": "center",
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "v6MHKa",
+                      "name": "Logo Icon",
+                      "fill": "$text-inverse",
+                      "content": "✚",
+                      "fontFamily": "Onest",
+                      "fontSize": 16,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                },
+                {
+                  "type": "text",
+                  "id": "zEbqO",
+                  "name": "Logo Text",
+                  "fill": "$text-primary",
+                  "content": "MedCheck",
+                  "fontFamily": "Instrument Sans",
+                  "fontSize": 18,
+                  "fontWeight": "600"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "f7Qtg",
+              "name": "Btn Nova",
+              "fill": "$accent",
+              "cornerRadius": 9999,
+              "gap": 8,
+              "padding": [
+                8,
+                18
+              ],
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "pjcQr",
+                  "name": "Btn Label",
+                  "fill": "$text-inverse",
+                  "content": "Nova Consulta",
+                  "fontFamily": "Instrument Sans",
+                  "fontSize": 13,
+                  "fontWeight": "600"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "SQ693",
+          "name": "Body",
+          "width": "fill_container",
+          "gap": 32,
+          "padding": 48,
+          "children": [
+            {
+              "type": "frame",
+              "id": "q2hfEe",
+              "name": "Left",
+              "width": 560,
+              "layout": "vertical",
+              "gap": 20,
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "vpMxs",
+                  "name": "Diagnosis Card",
+                  "width": "fill_container",
+                  "fill": "$surface",
+                  "cornerRadius": "$radius-2xl",
+                  "layout": "vertical",
+                  "gap": 20,
+                  "padding": 28,
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "jLWZZ",
+                      "name": "Diag Header",
+                      "width": "fill_container",
+                      "justifyContent": "space_between",
+                      "children": [
+                        {
+                          "type": "frame",
+                          "id": "so2Vo",
+                          "name": "Title Block",
+                          "layout": "vertical",
+                          "gap": 4,
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "ctzTc",
+                              "name": "Diag Label",
+                              "fill": "$text-muted",
+                              "content": "Diagnóstico provável",
+                              "fontFamily": "Onest",
+                              "fontSize": 12,
+                              "fontWeight": "normal"
+                            },
+                            {
+                              "type": "text",
+                              "id": "QVvdZ",
+                              "name": "Diag Name",
+                              "fill": "$text-primary",
+                              "content": "Gripe",
+                              "fontFamily": "Instrument Sans",
+                              "fontSize": 36,
+                              "fontWeight": "700"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "frame",
+                          "id": "nDcVB",
+                          "name": "Confidence",
+                          "fill": "$accent",
+                          "cornerRadius": "$radius-xl",
+                          "layout": "vertical",
+                          "gap": 2,
+                          "padding": [
+                            12,
+                            16
+                          ],
+                          "alignItems": "center",
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "d6IliZ",
+                              "name": "Conf Value",
+                              "fill": "$text-inverse",
+                              "content": "87%",
+                              "fontFamily": "Geist Mono",
+                              "fontSize": 22,
+                              "fontWeight": "700"
+                            },
+                            {
+                              "type": "text",
+                              "id": "h45Rh",
+                              "name": "Conf Label",
+                              "fill": "$text-inverse",
+                              "content": "confiança",
+                              "fontFamily": "Onest",
+                              "fontSize": 11,
+                              "fontWeight": "normal"
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "U5KTh3",
+                      "name": "CID Row",
+                      "gap": 8,
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "frame",
+                          "id": "DULZb",
+                          "name": "CID Badge",
+                          "fill": "$surface-2",
+                          "cornerRadius": 9999,
+                          "padding": [
+                            4,
+                            10
+                          ],
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "DRV3d",
+                              "name": "CID Code",
+                              "fill": "$text-secondary",
+                              "content": "CID-10: J11",
+                              "fontFamily": "Geist Mono",
+                              "fontSize": 12,
+                              "fontWeight": "normal"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "text",
+                          "id": "gXa6n",
+                          "name": "CID Desc",
+                          "fill": "$text-secondary",
+                          "content": "Influenza devida a vírus não identificado",
+                          "fontFamily": "Onest",
+                          "fontSize": 13,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "llxPY",
+                      "name": "Divider",
+                      "width": "fill_container",
+                      "height": 1,
+                      "fill": "$surface-2"
+                    },
+                    {
+                      "type": "frame",
+                      "id": "hoyey",
+                      "name": "Symptoms Summary",
+                      "width": "fill_container",
+                      "layout": "vertical",
+                      "gap": 10,
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "QFJvL",
+                          "name": "Symp Label",
+                          "fill": "$text-secondary",
+                          "content": "Sintomas que levaram ao diagnóstico",
+                          "fontFamily": "Instrument Sans",
+                          "fontSize": 12,
+                          "fontWeight": "600"
+                        },
+                        {
+                          "type": "frame",
+                          "id": "yw43d",
+                          "name": "Symp Chips",
+                          "width": "fill_container",
+                          "gap": 8,
+                          "children": [
+                            {
+                              "type": "frame",
+                              "id": "yExgV",
+                              "name": "Chip Febre",
+                              "fill": "$success-light",
+                              "cornerRadius": 9999,
+                              "padding": [
+                                5,
+                                12
+                              ],
+                              "children": [
+                                {
+                                  "type": "text",
+                                  "id": "XmhrJ",
+                                  "name": "Chip Text",
+                                  "fill": "$success",
+                                  "content": "Febre",
+                                  "fontFamily": "Onest",
+                                  "fontSize": 12,
+                                  "fontWeight": "normal"
+                                }
+                              ]
+                            },
+                            {
+                              "type": "frame",
+                              "id": "iOgWM",
+                              "name": "Chip Coriza",
+                              "fill": "$success-light",
+                              "cornerRadius": 9999,
+                              "padding": [
+                                5,
+                                12
+                              ],
+                              "children": [
+                                {
+                                  "type": "text",
+                                  "id": "egsxK",
+                                  "name": "Chip Text",
+                                  "fill": "$success",
+                                  "content": "Coriza",
+                                  "fontFamily": "Onest",
+                                  "fontSize": 12,
+                                  "fontWeight": "normal"
+                                }
+                              ]
+                            },
+                            {
+                              "type": "frame",
+                              "id": "UlRe3",
+                              "name": "Chip Dor de cabeça",
+                              "fill": "$success-light",
+                              "cornerRadius": 9999,
+                              "padding": [
+                                5,
+                                12
+                              ],
+                              "children": [
+                                {
+                                  "type": "text",
+                                  "id": "XJenq",
+                                  "name": "Chip Text",
+                                  "fill": "$success",
+                                  "content": "Dor de cabeça",
+                                  "fontFamily": "Onest",
+                                  "fontSize": 12,
+                                  "fontWeight": "normal"
+                                }
+                              ]
+                            },
+                            {
+                              "type": "frame",
+                              "id": "pWy0e",
+                              "name": "Chip Cansaço",
+                              "fill": "$success-light",
+                              "cornerRadius": 9999,
+                              "padding": [
+                                5,
+                                12
+                              ],
+                              "children": [
+                                {
+                                  "type": "text",
+                                  "id": "qDj2y",
+                                  "name": "Chip Text",
+                                  "fill": "$success",
+                                  "content": "Cansaço",
+                                  "fontFamily": "Onest",
+                                  "fontSize": 12,
+                                  "fontWeight": "normal"
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "n9x2r0",
+                  "name": "MedlinePlus Card",
+                  "width": "fill_container",
+                  "fill": "$surface",
+                  "cornerRadius": "$radius-2xl",
+                  "layout": "vertical",
+                  "gap": 16,
+                  "padding": 24,
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "FnCjj",
+                      "name": "Med Header",
+                      "width": "fill_container",
+                      "gap": 8,
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "frame",
+                          "id": "m7l2Td",
+                          "name": "Med Badge",
+                          "fill": "#E0F2FE",
+                          "cornerRadius": 9999,
+                          "padding": [
+                            4,
+                            10
+                          ],
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "ltJe1",
+                              "name": "Med Badge Text",
+                              "fill": "#0284C7",
+                              "content": "MedlinePlus",
+                              "fontFamily": "Geist Mono",
+                              "fontSize": 11,
+                              "fontWeight": "600"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "text",
+                          "id": "aL5QB",
+                          "name": "Med Title",
+                          "fill": "$text-primary",
+                          "content": "Informações sobre Gripe",
+                          "fontFamily": "Instrument Sans",
+                          "fontSize": 15,
+                          "fontWeight": "600"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "text",
+                      "id": "QtwF0",
+                      "name": "Med Desc",
+                      "fill": "$text-secondary",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "A gripe é uma doença respiratória contagiosa causada por vírus influenza que infectam o nariz, a garganta e, às vezes, os pulmões. Pode causar doença leve a grave.",
+                      "lineHeight": 1.6,
+                      "fontFamily": "Onest",
+                      "fontSize": 14,
+                      "fontWeight": "normal"
+                    },
+                    {
+                      "type": "frame",
+                      "id": "HUK1c",
+                      "name": "Med Grid",
+                      "width": "fill_container",
+                      "gap": 12,
+                      "children": [
+                        {
+                          "type": "frame",
+                          "id": "YouA6",
+                          "name": "Grid Tratamento",
+                          "width": "fill_container",
+                          "fill": "$bg",
+                          "cornerRadius": "$radius-lg",
+                          "layout": "vertical",
+                          "gap": 6,
+                          "padding": 14,
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "xRTbV",
+                              "name": "Grid Title",
+                              "fill": "$text-primary",
+                              "content": "Tratamento",
+                              "fontFamily": "Instrument Sans",
+                              "fontSize": 12,
+                              "fontWeight": "600"
+                            },
+                            {
+                              "type": "text",
+                              "id": "tMWMu",
+                              "name": "Grid Text",
+                              "fill": "$text-secondary",
+                              "textGrowth": "fixed-width",
+                              "width": "fill_container",
+                              "content": "Repouso, hidratação e analgésicos. Antivirais em casos graves.",
+                              "lineHeight": 1.5,
+                              "fontFamily": "Onest",
+                              "fontSize": 12,
+                              "fontWeight": "normal"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "frame",
+                          "id": "V9fkR",
+                          "name": "Grid Quando buscar ajuda",
+                          "width": "fill_container",
+                          "fill": "$bg",
+                          "cornerRadius": "$radius-lg",
+                          "layout": "vertical",
+                          "gap": 6,
+                          "padding": 14,
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "j3afn5",
+                              "name": "Grid Title",
+                              "fill": "$text-primary",
+                              "content": "Quando buscar ajuda",
+                              "fontFamily": "Instrument Sans",
+                              "fontSize": 12,
+                              "fontWeight": "600"
+                            },
+                            {
+                              "type": "text",
+                              "id": "ZUPNA",
+                              "name": "Grid Text",
+                              "fill": "$text-secondary",
+                              "textGrowth": "fixed-width",
+                              "width": "fill_container",
+                              "content": "Dificuldade respiratória, dor no peito ou sintomas que pioram.",
+                              "lineHeight": 1.5,
+                              "fontFamily": "Onest",
+                              "fontSize": 12,
+                              "fontWeight": "normal"
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "QplTb",
+              "name": "Right",
+              "width": "fill_container",
+              "layout": "vertical",
+              "gap": 20,
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "SmT9A",
+                  "name": "Other Diagnoses",
+                  "width": "fill_container",
+                  "fill": "$surface",
+                  "cornerRadius": "$radius-2xl",
+                  "layout": "vertical",
+                  "gap": 16,
+                  "padding": 24,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "EKY2u",
+                      "name": "Other Title",
+                      "fill": "$text-primary",
+                      "content": "Outros diagnósticos possíveis",
+                      "fontFamily": "Instrument Sans",
+                      "fontSize": 14,
+                      "fontWeight": "600"
+                    },
+                    {
+                      "type": "frame",
+                      "id": "tDT3U",
+                      "name": "Other Resfriado Comum",
+                      "width": "fill_container",
+                      "fill": "$bg",
+                      "cornerRadius": "$radius-lg",
+                      "padding": [
+                        12,
+                        14
+                      ],
+                      "justifyContent": "space_between",
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "frame",
+                          "id": "g55eT",
+                          "name": "O Left",
+                          "layout": "vertical",
+                          "gap": 2,
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "Rwe3B",
+                              "name": "O Name",
+                              "fill": "$text-primary",
+                              "content": "Resfriado Comum",
+                              "fontFamily": "Onest",
+                              "fontSize": 14,
+                              "fontWeight": "500"
+                            },
+                            {
+                              "type": "text",
+                              "id": "J4a5V3",
+                              "name": "O CID",
+                              "fill": "$text-muted",
+                              "content": "J00",
+                              "fontFamily": "Geist Mono",
+                              "fontSize": 11,
+                              "fontWeight": "normal"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "frame",
+                          "id": "TKnUr",
+                          "name": "O Badge",
+                          "fill": "$surface-2",
+                          "cornerRadius": 9999,
+                          "padding": [
+                            4,
+                            12
+                          ],
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "e9lN4W",
+                              "name": "O Pct",
+                              "fill": "$text-secondary",
+                              "content": "42%",
+                              "fontFamily": "Geist Mono",
+                              "fontSize": 13,
+                              "fontWeight": "normal"
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "R1aUgg",
+                      "name": "Other Covid-19",
+                      "width": "fill_container",
+                      "fill": "$bg",
+                      "cornerRadius": "$radius-lg",
+                      "padding": [
+                        12,
+                        14
+                      ],
+                      "justifyContent": "space_between",
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "frame",
+                          "id": "edium",
+                          "name": "O Left",
+                          "layout": "vertical",
+                          "gap": 2,
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "fkdQq",
+                              "name": "O Name",
+                              "fill": "$text-primary",
+                              "content": "Covid-19",
+                              "fontFamily": "Onest",
+                              "fontSize": 14,
+                              "fontWeight": "500"
+                            },
+                            {
+                              "type": "text",
+                              "id": "gZXxl",
+                              "name": "O CID",
+                              "fill": "$text-muted",
+                              "content": "U07.1",
+                              "fontFamily": "Geist Mono",
+                              "fontSize": 11,
+                              "fontWeight": "normal"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "frame",
+                          "id": "bgi6R",
+                          "name": "O Badge",
+                          "fill": "$surface-2",
+                          "cornerRadius": 9999,
+                          "padding": [
+                            4,
+                            12
+                          ],
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "jN93N",
+                              "name": "O Pct",
+                              "fill": "$text-secondary",
+                              "content": "29%",
+                              "fontFamily": "Geist Mono",
+                              "fontSize": 13,
+                              "fontWeight": "normal"
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "GfsUv",
+                      "name": "Other Amigdalite",
+                      "width": "fill_container",
+                      "fill": "$bg",
+                      "cornerRadius": "$radius-lg",
+                      "padding": [
+                        12,
+                        14
+                      ],
+                      "justifyContent": "space_between",
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "frame",
+                          "id": "OXno0",
+                          "name": "O Left",
+                          "layout": "vertical",
+                          "gap": 2,
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "w9lnXT",
+                              "name": "O Name",
+                              "fill": "$text-primary",
+                              "content": "Amigdalite",
+                              "fontFamily": "Onest",
+                              "fontSize": 14,
+                              "fontWeight": "500"
+                            },
+                            {
+                              "type": "text",
+                              "id": "F0u06",
+                              "name": "O CID",
+                              "fill": "$text-muted",
+                              "content": "J03",
+                              "fontFamily": "Geist Mono",
+                              "fontSize": 11,
+                              "fontWeight": "normal"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "frame",
+                          "id": "oKIhD",
+                          "name": "O Badge",
+                          "fill": "$surface-2",
+                          "cornerRadius": 9999,
+                          "padding": [
+                            4,
+                            12
+                          ],
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "sE4mI",
+                              "name": "O Pct",
+                              "fill": "$text-secondary",
+                              "content": "15%",
+                              "fontFamily": "Geist Mono",
+                              "fontSize": 13,
+                              "fontWeight": "normal"
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "Ru9eU",
+                  "name": "Warning Card",
+                  "width": "fill_container",
+                  "fill": "#FEF3C7",
+                  "cornerRadius": "$radius-2xl",
+                  "layout": "vertical",
+                  "gap": 10,
+                  "padding": 20,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "QwTSt",
+                      "name": "Warn Title",
+                      "fill": "#92400E",
+                      "content": "⚠ Aviso importante",
+                      "fontFamily": "Instrument Sans",
+                      "fontSize": 13,
+                      "fontWeight": "600"
+                    },
+                    {
+                      "type": "text",
+                      "id": "p5G7Y",
+                      "name": "Warn Text",
+                      "fill": "#92400E",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "Este diagnóstico é gerado por um sistema especialista e tem fins educativos. Consulte sempre um profissional de saúde para diagnóstico e tratamento adequados.",
+                      "lineHeight": 1.5,
+                      "fontFamily": "Onest",
+                      "fontSize": 13,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "ooY4M",
+                  "name": "Source Card",
+                  "width": "fill_container",
+                  "fill": "$surface",
+                  "cornerRadius": "$radius-2xl",
+                  "layout": "vertical",
+                  "gap": 12,
+                  "padding": 20,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "a2mcV",
+                      "name": "Source Title",
+                      "fill": "$text-primary",
+                      "content": "Lógica aplicada",
+                      "fontFamily": "Instrument Sans",
+                      "fontSize": 13,
+                      "fontWeight": "600"
+                    },
+                    {
+                      "type": "frame",
+                      "id": "eDKyf",
+                      "name": "Rule febre → ",
+                      "width": "fill_container",
+                      "fill": "$bg",
+                      "cornerRadius": "$radius-lg",
+                      "padding": [
+                        6,
+                        12
+                      ],
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "Rk1oM",
+                          "name": "Rule Text",
+                          "fill": "$text-secondary",
+                          "content": "febre → gripe ∨ dengue",
+                          "fontFamily": "Geist Mono",
+                          "fontSize": 12,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "y6H5uD",
+                      "name": "Rule coriza →",
+                      "width": "fill_container",
+                      "fill": "$bg",
+                      "cornerRadius": "$radius-lg",
+                      "padding": [
+                        6,
+                        12
+                      ],
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "g94vo",
+                          "name": "Rule Text",
+                          "fill": "$text-secondary",
+                          "content": "coriza → gripe ∨ resfriado",
+                          "fontFamily": "Geist Mono",
+                          "fontSize": 12,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "W9TVEw",
+                      "name": "Rule dor_cabe",
+                      "width": "fill_container",
+                      "fill": "$bg",
+                      "cornerRadius": "$radius-lg",
+                      "padding": [
+                        6,
+                        12
+                      ],
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "xXFaU",
+                          "name": "Rule Text",
+                          "fill": "$text-secondary",
+                          "content": "dor_cabeca → gripe",
+                          "fontFamily": "Geist Mono",
+                          "fontSize": 12,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "rEBln",
+                      "name": "Rule ausencia",
+                      "width": "fill_container",
+                      "fill": "$bg",
+                      "cornerRadius": "$radius-lg",
+                      "padding": [
+                        6,
+                        12
+                      ],
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "dyB0G",
+                          "name": "Rule Text",
+                          "fill": "$text-secondary",
+                          "content": "ausencia(manchas) → ¬dengue",
+                          "fontFamily": "Geist Mono",
+                          "fontSize": 12,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "var8x",
+      "x": 4560,
+      "y": 0,
+      "name": "4 – Modal Como Funciona",
+      "clip": true,
+      "width": 1440,
+      "height": 900,
+      "layout": "none",
+      "children": [
+        {
+          "type": "frame",
+          "id": "c0G6Sq",
+          "x": 0,
+          "y": 0,
+          "name": "Overlay",
+          "width": 1440,
+          "height": 900,
+          "fill": "#1A1A1A66"
+        },
+        {
+          "type": "frame",
+          "id": "aJNhF",
+          "x": 420,
+          "y": 80,
+          "name": "Modal",
+          "clip": true,
+          "width": 600,
+          "fill": "$surface",
+          "cornerRadius": "$radius-2xl",
+          "layout": "vertical",
+          "children": [
+            {
+              "type": "frame",
+              "id": "lwd49",
+              "name": "Modal Header",
+              "width": "fill_container",
+              "padding": 24,
+              "justifyContent": "space_between",
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "SFSpx",
+                  "name": "Modal Title",
+                  "fill": "$text-primary",
+                  "content": "Como funciona?",
+                  "fontFamily": "Instrument Sans",
+                  "fontSize": 20,
+                  "fontWeight": "700"
+                },
+                {
+                  "type": "frame",
+                  "id": "gQPxF",
+                  "name": "Close Btn",
+                  "width": 32,
+                  "height": 32,
+                  "fill": "$surface-2",
+                  "cornerRadius": 9999,
+                  "justifyContent": "center",
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "dZQCp",
+                      "name": "Close Icon",
+                      "fill": "$text-secondary",
+                      "content": "✕",
+                      "fontFamily": "Onest",
+                      "fontSize": 14,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "QadfU",
+              "name": "Divider",
+              "width": "fill_container",
+              "height": 1,
+              "fill": "$surface-2"
+            },
+            {
+              "type": "frame",
+              "id": "uTegT",
+              "name": "Modal Body",
+              "width": "fill_container",
+              "layout": "vertical",
+              "gap": 20,
+              "padding": [
+                24,
+                24,
+                28,
+                24
+              ],
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "bwZ40",
+                  "name": "Step 1",
+                  "width": "fill_container",
+                  "gap": 16,
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "zlXFS",
+                      "name": "Num Badge",
+                      "width": 32,
+                      "height": 32,
+                      "fill": "$accent",
+                      "cornerRadius": 9999,
+                      "justifyContent": "center",
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "DOSUj",
+                          "name": "Num",
+                          "fill": "$text-inverse",
+                          "content": "1",
+                          "fontFamily": "Instrument Sans",
+                          "fontSize": 14,
+                          "fontWeight": "700"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "si9Q4",
+                      "name": "Step Content",
+                      "width": "fill_container",
+                      "layout": "vertical",
+                      "gap": 4,
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "RYkB1",
+                          "name": "Step Title",
+                          "fill": "$text-primary",
+                          "content": "Escolha a precisão",
+                          "fontFamily": "Instrument Sans",
+                          "fontSize": 14,
+                          "fontWeight": "600"
+                        },
+                        {
+                          "type": "text",
+                          "id": "y3kUb",
+                          "name": "Step Desc",
+                          "fill": "$text-secondary",
+                          "textGrowth": "fixed-width",
+                          "width": "fill_container",
+                          "content": "Selecione entre 20, 60 ou 120 perguntas. Mais perguntas significa mais sintomas avaliados e um diagnóstico mais preciso.",
+                          "lineHeight": 1.5,
+                          "fontFamily": "Onest",
+                          "fontSize": 13,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "CNUfJ",
+                  "name": "Step 2",
+                  "width": "fill_container",
+                  "gap": 16,
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "wKotx",
+                      "name": "Num Badge",
+                      "width": 32,
+                      "height": 32,
+                      "fill": "#10B981",
+                      "cornerRadius": 9999,
+                      "justifyContent": "center",
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "z1sIK",
+                          "name": "Num",
+                          "fill": "$text-inverse",
+                          "content": "2",
+                          "fontFamily": "Instrument Sans",
+                          "fontSize": 14,
+                          "fontWeight": "700"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "P3WqdX",
+                      "name": "Step Content",
+                      "width": "fill_container",
+                      "layout": "vertical",
+                      "gap": 4,
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "t8WhCE",
+                          "name": "Step Title",
+                          "fill": "$text-primary",
+                          "content": "Responda sobre seus sintomas",
+                          "fontFamily": "Instrument Sans",
+                          "fontSize": 14,
+                          "fontWeight": "600"
+                        },
+                        {
+                          "type": "text",
+                          "id": "CBPMk",
+                          "name": "Step Desc",
+                          "fill": "$text-secondary",
+                          "textGrowth": "fixed-width",
+                          "width": "fill_container",
+                          "content": "O sistema pergunta sobre febre, tosse, dor, manchas e outros sintomas. Responda com sim ou não.",
+                          "lineHeight": 1.5,
+                          "fontFamily": "Onest",
+                          "fontSize": 13,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "CcuxR",
+                  "name": "Step 3",
+                  "width": "fill_container",
+                  "gap": 16,
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "OuUb2",
+                      "name": "Num Badge",
+                      "width": 32,
+                      "height": 32,
+                      "fill": "#F59E0B",
+                      "cornerRadius": 9999,
+                      "justifyContent": "center",
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "jFV3X",
+                          "name": "Num",
+                          "fill": "$text-inverse",
+                          "content": "3",
+                          "fontFamily": "Instrument Sans",
+                          "fontSize": 14,
+                          "fontWeight": "700"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "zv2lk",
+                      "name": "Step Content",
+                      "width": "fill_container",
+                      "layout": "vertical",
+                      "gap": 4,
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "ZvYoj",
+                          "name": "Step Title",
+                          "fill": "$text-primary",
+                          "content": "Inferência lógica em Prolog",
+                          "fontFamily": "Instrument Sans",
+                          "fontSize": 14,
+                          "fontWeight": "600"
+                        },
+                        {
+                          "type": "text",
+                          "id": "EDKDJ",
+                          "name": "Step Desc",
+                          "fill": "$text-secondary",
+                          "textGrowth": "fixed-width",
+                          "width": "fill_container",
+                          "content": "Um motor de inferência escrito em Prolog analisa suas respostas e aplica regras médicas para identificar a doença mais provável.",
+                          "lineHeight": 1.5,
+                          "fontFamily": "Onest",
+                          "fontSize": 13,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "UrTnx",
+                  "name": "Step 4",
+                  "width": "fill_container",
+                  "gap": 16,
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "Msbgc",
+                      "name": "Num Badge",
+                      "width": 32,
+                      "height": 32,
+                      "fill": "#0284C7",
+                      "cornerRadius": 9999,
+                      "justifyContent": "center",
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "Fhqus",
+                          "name": "Num",
+                          "fill": "$text-inverse",
+                          "content": "4",
+                          "fontFamily": "Instrument Sans",
+                          "fontSize": 14,
+                          "fontWeight": "700"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "strWO",
+                      "name": "Step Content",
+                      "width": "fill_container",
+                      "layout": "vertical",
+                      "gap": 4,
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "Uso2C",
+                          "name": "Step Title",
+                          "fill": "$text-primary",
+                          "content": "Resultado com MedlinePlus",
+                          "fontFamily": "Instrument Sans",
+                          "fontSize": 14,
+                          "fontWeight": "600"
+                        },
+                        {
+                          "type": "text",
+                          "id": "Uanp6",
+                          "name": "Step Desc",
+                          "fill": "$text-secondary",
+                          "textGrowth": "fixed-width",
+                          "width": "fill_container",
+                          "content": "O diagnóstico é enriquecido com dados da API MedlinePlus (NIH), trazendo descrição oficial, tratamento e orientações médicas.",
+                          "lineHeight": 1.5,
+                          "fontFamily": "Onest",
+                          "fontSize": 13,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "pwXQb",
+                  "name": "Divider 2",
+                  "width": "fill_container",
+                  "height": 1,
+                  "fill": "$surface-2"
+                },
+                {
+                  "type": "frame",
+                  "id": "CacfA",
+                  "name": "Disclaimer Row",
+                  "width": "fill_container",
+                  "fill": "#FEF3C7",
+                  "cornerRadius": "$radius-lg",
+                  "gap": 10,
+                  "padding": [
+                    12,
+                    16
+                  ],
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "W1tE5",
+                      "name": "Disc Icon",
+                      "fill": "#92400E",
+                      "content": "⚠",
+                      "fontFamily": "Onest",
+                      "fontSize": 14,
+                      "fontWeight": "normal"
+                    },
+                    {
+                      "type": "text",
+                      "id": "uOlut",
+                      "name": "Disc Text",
+                      "fill": "#92400E",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "Este sistema é educativo. Não substitui consulta médica profissional.",
+                      "lineHeight": 1.5,
+                      "fontFamily": "Onest",
+                      "fontSize": 12,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "variables": {
+    "bg": {
+      "type": "color",
+      "value": "#F5F5F5"
+    },
+    "surface": {
+      "type": "color",
+      "value": "#FFFFFF"
+    },
+    "surface-2": {
+      "type": "color",
+      "value": "#EBEBEB"
+    },
+    "accent": {
+      "type": "color",
+      "value": "#8B5CF6"
+    },
+    "accent-light": {
+      "type": "color",
+      "value": "#EDE9FE"
+    },
+    "text-primary": {
+      "type": "color",
+      "value": "#1A1A1A"
+    },
+    "text-secondary": {
+      "type": "color",
+      "value": "#666666"
+    },
+    "text-muted": {
+      "type": "color",
+      "value": "#D1D1D1"
+    },
+    "text-inverse": {
+      "type": "color",
+      "value": "#FFFFFF"
+    },
+    "success": {
+      "type": "color",
+      "value": "#10B981"
+    },
+    "success-light": {
+      "type": "color",
+      "value": "#D1FAE5"
+    },
+    "warning": {
+      "type": "color",
+      "value": "#F59E0B"
+    },
+    "radius-lg": {
+      "type": "number",
+      "value": 8
+    },
+    "radius-xl": {
+      "type": "number",
+      "value": 12
+    },
+    "radius-2xl": {
+      "type": "number",
+      "value": 16
+    },
+    "gap-sm": {
+      "type": "number",
+      "value": 8
+    },
+    "gap-md": {
+      "type": "number",
+      "value": 16
+    },
+    "gap-lg": {
+      "type": "number",
+      "value": 24
+    }
+  },
+  "fileToken": "be46b107-3fd2-45ec-befc-062407e4f07f"
+}
