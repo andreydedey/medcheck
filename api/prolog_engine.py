@@ -91,7 +91,7 @@ def get_prolog() -> Prolog:
     if _prolog is None:
         _prolog = Prolog()
         src_dir = os.path.join(os.path.dirname(__file__), "src")
-        _prolog.consult(os.path.join(src_dir, "diagnostico.pl"))
+        _prolog.consult(os.path.join(src_dir, "diagnosis.pl"))
         _load_data(_prolog)
     return _prolog
 
