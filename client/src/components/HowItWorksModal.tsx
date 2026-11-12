@@ -12,7 +12,7 @@ interface Props {
   onClose: () => void
 }
 
-export function ModalComoFunciona({ open, onClose }: Props) {
+export function HowItWorksModal({ open, onClose }: Props) {
   return (
     <Dialog open={open} onOpenChange={onClose}>
       <DialogContent className="max-w-lg">
