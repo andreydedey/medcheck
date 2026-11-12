@@ -68,31 +68,47 @@ export function Questionnaire({ onFinish }: Props) {
         </div>
       </nav>
 
-      <main className="flex-1 flex flex-col gap-6 px-8 py-8 max-w-7xl mx-auto w-full">
+      <div className="px-8 pt-8 pb-4 max-w-7xl mx-auto w-full">
         <div className="flex flex-col gap-1">
           <h1 className="text-2xl font-bold font-heading text-foreground">Selecione seus sintomas</h1>
           <p className="text-sm text-muted-foreground">
             Marque todos os sintomas que você está sentindo agora. Os sintomas de maior peso clínico aparecem primeiro.
           </p>
         </div>
+      </div>
 
-        <div className="relative max-w-md">
-          <svg
-            className="absolute left-3.5 top-1/2 -translate-y-1/2 text-muted-foreground/50 pointer-events-none"
-            width="16" height="16" viewBox="0 0 24 24" fill="none"
-            stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"
-          >
-            <circle cx="11" cy="11" r="8" />
-            <path d="m21 21-4.35-4.35" />
-          </svg>
-          <input
-            type="text"
-            placeholder="Buscar sintoma..."
-            value={search}
-            onChange={(e) => setSearch(e.target.value)}
-            className="w-full bg-white border border-border rounded-xl py-2.5 pl-10 pr-4 text-sm outline-none focus:ring-2 focus:ring-violet-500/20 focus:border-violet-400 transition-all"
-          />
+      <div className="sticky top-16 z-10 bg-white/80 backdrop-blur-sm border-b border-border">
+        <div className="max-w-7xl mx-auto px-8 py-3 flex items-center gap-3">
+          <div className="relative flex-1 max-w-md">
+            <svg
+              className="absolute left-3.5 top-1/2 -translate-y-1/2 text-muted-foreground/40 pointer-events-none"
+              width="15" height="15" viewBox="0 0 24 24" fill="none"
+              stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"
+            >
+              <circle cx="11" cy="11" r="8" />
+              <path d="m21 21-4.35-4.35" />
+            </svg>
+            <input
+              type="text"
+              placeholder="Buscar sintoma..."
+              value={search}
+              onChange={(e) => setSearch(e.target.value)}
+              className="w-full bg-white border border-border rounded-2xl py-2.5 pl-10 pr-4 text-sm shadow-sm outline-none focus:ring-2 focus:ring-violet-500/20 focus:border-violet-400 transition-all"
+            />
+          </div>
+          {count > 0 && (
+            <Button
+              variant="outline"
+              onClick={() => setSelected(new Set())}
+              className="rounded-2xl h-10 px-4 text-sm shrink-0 border-red-200 text-red-500 hover:bg-red-50 hover:text-red-600 hover:border-red-300"
+            >
+              Limpar tudo
+            </Button>
+          )}
         </div>
+      </div>
+
+      <main className="flex-1 flex flex-col gap-6 px-8 py-6 max-w-7xl mx-auto w-full">
 
         {filtered.length === 0 ? (
           <div className="flex flex-col items-center justify-center py-20 gap-2">
