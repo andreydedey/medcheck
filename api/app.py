@@ -1,6 +1,6 @@
 from flask import Flask, request, jsonify
 from flask_cors import CORS
-from prolog_engine import listar_sintomas, listar_doencas, diagnosticar
+from prolog_engine import get_symptoms, get_diseases, diagnose
 
 app = Flask(__name__)
 CORS(app)
@@ -8,30 +8,30 @@ CORS(app)
 
 @app.get("/")
 def health():
-    return jsonify({"status": "ok", "versao": "1.0.0"})
+    return jsonify({"status": "ok", "version": "1.0.0"})
 
 
-@app.get("/api/sintomas")
-def route_sintomas():
-    return jsonify({"sintomas": listar_sintomas()})
+@app.get("/api/symptoms")
+def route_symptoms():
+    return jsonify({"symptoms": get_symptoms()})
 
 
-@app.get("/api/doencas")
-def route_doencas():
-    return jsonify({"doencas": listar_doencas()})
+@app.get("/api/diseases")
+def route_diseases():
+    return jsonify({"diseases": get_diseases()})
 
 
-@app.post("/api/diagnosticar")
-def route_diagnosticar():
+@app.post("/api/diagnose")
+def route_diagnose():
     body = request.get_json()
-    sintomas = body.get("sintomas", [])
-    limite = body.get("limite", 5)
+    symptoms = body.get("symptoms", [])
+    limit = body.get("limit", 5)
 
-    if not sintomas:
-        return jsonify({"erro": "sintomas é obrigatório"}), 400
+    if not symptoms:
+        return jsonify({"error": "symptoms is required"}), 400
 
-    resultado = diagnosticar(sintomas, limite)
-    return jsonify({"resultados": resultado})
+    results = diagnose(symptoms, limit)
+    return jsonify({"results": results})
 
 
 if __name__ == "__main__":
