@@ -4,8 +4,8 @@ api/__pycache__/
 api/*.pyc
 
 # Node / Bun
-web/node_modules/
-web/dist/
+client/node_modules/
+client/dist/
 
 # OS
 .DS_Store
