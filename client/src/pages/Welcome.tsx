@@ -2,14 +2,12 @@ import { useState } from 'react'
 import { Button } from '@/components/ui/button'
 import { Logo } from '@/components/Logo'
 import { HowItWorksModal } from '@/components/HowItWorksModal'
-import { MODES, type Mode } from '@/lib/modes'
 
 interface Props {
-  onStart: (mode: Mode) => void
+  onStart: () => void
 }
 
 export function Welcome({ onStart }: Props) {
-  const [mode, setMode] = useState<Mode>('standard')
   const [modalOpen, setModalOpen] = useState(false)
 
   return (
@@ -39,35 +37,16 @@ export function Welcome({ onStart }: Props) {
             Descubra o que pode<br />estar te afetando
           </h1>
           <p className="text-xl text-muted-foreground leading-relaxed max-w-xl">
-            Responda perguntas simples sobre seus sintomas e receba um diagnóstico preliminar baseado em inferência lógica. Sempre consulte um médico.
+            Selecione seus sintomas e receba um diagnóstico preliminar baseado em inferência lógica. Sempre consulte um médico.
           </p>
-        </div>
-
-        <div className="flex items-center gap-4">
-          <span className="text-sm text-muted-foreground">Escolha a precisão:</span>
-          {(Object.entries(MODES) as [Mode, typeof MODES[Mode]][]).map(([key, m]) => (
-            <button
-              key={key}
-              onClick={() => setMode(key)}
-              className={`flex flex-col items-center gap-1 px-6 py-4 rounded-xl border-2 transition-all ${
-                mode === key
-                  ? 'border-violet-600 bg-violet-600 text-white'
-                  : 'border-border bg-white text-foreground hover:border-violet-300'
-              }`}
-            >
-              <span className="text-base font-semibold font-heading">{m.label}</span>
-              <span className={`text-sm ${mode === key ? 'text-violet-200' : 'text-muted-foreground'}`}>{m.questions} perguntas</span>
-              <span className={`text-xs font-mono ${mode === key ? 'text-violet-300' : 'text-muted-foreground/60'}`}>{m.time}</span>
-            </button>
-          ))}
         </div>
 
         <div className="flex items-center gap-3">
           <Button
-            onClick={() => onStart(mode)}
+            onClick={onStart}
             className="bg-violet-600 hover:bg-violet-700 text-white rounded-full px-8 h-12 font-heading font-semibold text-base"
           >
-            Iniciar Diagnóstico
+            Selecionar Sintomas
           </Button>
           <Button
             variant="secondary"

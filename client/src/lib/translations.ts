@@ -135,7 +135,6 @@ const SYMPTOM_PT: Record<string, string> = {
   yellowing_of_eyes:                 'Olhos amarelados (icterícia)',
   yellowish_skin:                    'Pele amarelada (icterícia)',
   fever:                             'Febre',
-  swelled_lymph_nodes:               'Gânglios inchados',
 }
 
 const DISEASE_PT: Record<string, string> = {
