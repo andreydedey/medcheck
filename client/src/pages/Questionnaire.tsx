@@ -5,16 +5,13 @@ import { Badge } from '@/components/ui/badge'
 import { Logo } from '@/components/Logo'
 import { getSymptoms, type Symptom } from '@/lib/api'
 import { MODES, type Mode } from '@/lib/modes'
+import { translateSymptom } from '@/lib/translations'
 
 interface Answer { symptom: string; yes: boolean }
 
 interface Props {
   mode: Mode
   onFinish: (positiveSymptoms: string[]) => void
-}
-
-function formatSymptom(s: string) {
-  return s.replace(/_/g, ' ').replace(/\b\w/g, (c) => c.toUpperCase())
 }
 
 export function Questionnaire({ mode, onFinish }: Props) {
@@ -82,7 +79,7 @@ export function Questionnaire({ mode, onFinish }: Props) {
               Sintoma {index + 1} de {symptoms.length}
             </span>
             <h2 className="text-4xl font-bold font-heading text-foreground leading-snug">
-              Você está sentindo<br />{formatSymptom(symptoms[index].name)}?
+              Você está sentindo<br />{translateSymptom(symptoms[index].name)}?
             </h2>
             <p className="text-sm text-muted-foreground leading-relaxed">
               Peso deste sintoma: <span className="font-mono text-violet-600">{symptoms[index].weight}/7</span>
@@ -110,7 +107,7 @@ export function Questionnaire({ mode, onFinish }: Props) {
               <span className="text-xs text-muted-foreground/60">Respostas anteriores</span>
               {recentAnswers.map((a) => (
                 <div key={a.symptom} className="flex items-center justify-between bg-white rounded-lg px-4 py-2.5 border border-border">
-                  <span className="text-sm text-muted-foreground">{formatSymptom(a.symptom)}</span>
+                  <span className="text-sm text-muted-foreground">{translateSymptom(a.symptom)}</span>
                   <Badge variant={a.yes ? 'default' : 'secondary'} className={a.yes ? 'bg-emerald-100 text-emerald-700 hover:bg-emerald-100' : ''}>
                     {a.yes ? 'Sim' : 'Não'}
                   </Badge>
@@ -129,7 +126,7 @@ export function Questionnaire({ mode, onFinish }: Props) {
               <div className="flex flex-wrap gap-2">
                 {positiveSymptoms.map((a) => (
                   <Badge key={a.symptom} className="bg-emerald-100 text-emerald-700 hover:bg-emerald-100 text-xs">
-                    {formatSymptom(a.symptom)}
+                    {translateSymptom(a.symptom)}
                   </Badge>
                 ))}
               </div>

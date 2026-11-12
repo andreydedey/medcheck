@@ -2,14 +2,11 @@ import { Button } from '@/components/ui/button'
 import { Badge } from '@/components/ui/badge'
 import { Logo } from '@/components/Logo'
 import type { Disease } from '@/lib/api'
+import { translateSymptom, translateDisease } from '@/lib/translations'
 
 interface Props {
   results: Disease[]
   onReset: () => void
-}
-
-function formatName(s: string) {
-  return s.replace(/_/g, ' ').replace(/\b\w/g, (c) => c.toUpperCase())
 }
 
 export function Result({ results, onReset }: Props) {
@@ -40,7 +37,7 @@ export function Result({ results, onReset }: Props) {
             <div className="flex justify-between items-start">
               <div className="flex flex-col gap-1">
                 <span className="text-xs text-muted-foreground/60">Diagnóstico provável</span>
-                <h1 className="text-4xl font-bold font-heading text-foreground">{formatName(primary.name)}</h1>
+                <h1 className="text-4xl font-bold font-heading text-foreground">{translateDisease(primary.name)}</h1>
               </div>
               <div className="bg-violet-600 rounded-xl px-5 py-3 flex flex-col items-center">
                 <span className="text-2xl font-bold font-mono text-white">{primary.confidence}%</span>
@@ -54,7 +51,7 @@ export function Result({ results, onReset }: Props) {
                 <div className="flex flex-wrap gap-2">
                   {primary.symptoms.map((s) => (
                     <Badge key={s} className="bg-emerald-100 text-emerald-700 hover:bg-emerald-100 text-xs">
-                      {formatName(s)}
+                      {translateSymptom(s)}
                     </Badge>
                   ))}
                 </div>
@@ -77,7 +74,7 @@ export function Result({ results, onReset }: Props) {
               <div className="grid grid-cols-2 gap-3">
                 {primary.precautions.map((p) => (
                   <div key={p} className="bg-neutral-50 rounded-lg px-4 py-3 flex flex-col gap-1">
-                    <p className="text-sm text-foreground">{formatName(p)}</p>
+                    <p className="text-sm text-foreground">{p}</p>
                   </div>
                 ))}
               </div>
@@ -91,7 +88,7 @@ export function Result({ results, onReset }: Props) {
               <p className="text-sm font-semibold font-heading text-foreground">Outros diagnósticos possíveis</p>
               {others.map((d) => (
                 <div key={d.name} className="flex items-center justify-between bg-neutral-50 rounded-lg px-4 py-3">
-                  <span className="text-sm font-medium text-foreground">{formatName(d.name)}</span>
+                  <span className="text-sm font-medium text-foreground">{translateDisease(d.name)}</span>
                   <span className="text-sm font-mono text-muted-foreground">{d.confidence}%</span>
                 </div>
               ))}
